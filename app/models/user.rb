@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :password, presence: { message: "is required"}
   validates :first_name, presence: { message: "is required"}
   validates :last_name, presence: { message: "is required"}
-  
-  has_many :lists
+
+  has_many :lists, dependent: :destroy
   has_many :items, through: :lists
 end
