@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pg', '~> 0.18', group: [:production, :staging]
 
 gem 'devise', '~> 4.4'
+
+gem 'active_model_serializers', '~> 0.10.0'
